@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
-    <form action="" id="form">
+    <form action="" id="form" novalidate>
         <div class="side">
             <div class="background-im">
                 <img src="images/background-img.jpg" alt="background Image" id="background-img" />
@@ -44,27 +44,33 @@
            <div class="form-input-section sec">
             <div class="form-details">
                 <label for="firstname">FIRST NAME</label>
-                <input type="text" name="firstname" id="firstname" required/>
+                <input type="text" name="firstname" id="firstname"/>
+                <span class="error"></span>
             </div>
             <div class="form-details">
                 <label for="lastname">LAST NAME</label>
-                <input type="text" name="lastname" id="lastname" required/>
+                <input type="text" name="lastname" id="lastname"/>
+                <span class="error"></span>
             </div>
             <div class="form-details">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" required/>
+                <label for="mail">EMAIL</label>
+                <input type="email" name="mail" id="mail"/>
+                <span class="error"></span>
             </div>
             <div class="form-details">
                 <label for="phone">PHONE NUMBER</label>
-                <input type="tel" name="phone" id="phone" required/>
+                <input type="tel" name="phone" id="phone"/>
+                <span class="error"></span>
             </div>
             <div class="form-details">
                 <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" class="error" required/>
+                <input type="password" name="password" id="password" />
+                <span class="error"></span>
             </div>
             <div class="form-details">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" id="confirm-password" class="error" required/>
+                <input type="password" name="confirm-password" id="confirm-password"/>
+                <span class="error"></span>
             </div>
            </div>
            <div class="submit-button">
