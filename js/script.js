@@ -140,7 +140,6 @@ confirmPassword.addEventListener("input",()=>{
       passError.textContent = "";
       passError.className = "error";
     }
-
     const isConfirmPassValid = passRegExp.test(confirmPassword.value);
     if(!isConfirmPassValid){
       confirmPassword.className = "invalid";
